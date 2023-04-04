@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@300&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+
+        a{
+        text-decoration: none;
+        color:black;
+        }
+
+        #b2{
+            background: url("../img/bg_header.gif") repeat left top; /*header 이미지*/
+        }
+
+        header{
+            width: 100%;
+            height: 100px;
+            border-bottom: 1px solid #ddd;
+            position: relative; /**/
+        }
+
+        #logo{
+            width: 220px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            font-family: 'Jua', sans-serif;
+            float: left;
+            margin-left:30px;
+        }
+
+        #n1{ /*div 로그인 회원가입*/
+            width: 450px;
+            height: 30px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin-right: 30px;
+        }
+
+        #n1 ul{
+            width: 100%;
+        }
+
+        #n1 ul li{
+            width: 150px;
+            height: 30px;
+            float: right;
+            text-align: center;
+            line-height: 30px;
+            font-size: 13px;
+            font-family: 'Jua', sans-serif;
+            margin-top: 10px;
+        }
+
+        #n2{ /*상품*/
+            width: 1000px;
+            height: 60px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        #n2 ul{
+            width: 100%;
+        }
+
+        #n2 ul li{
+            width: 141px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            float: right;
+            font-size: 13px;
+            font-family: 'Jua', sans-serif;
+        }
+
+        #n1 ul li a:hover{
+            width: 100%;
+            display: block;
+            color:RGB(0, 112, 74);
+            border-bottom: 3px solid RGB(0, 112, 74);
+        }
+
+        #n2 ul li a:hover{
+            width: 100%;
+            display: block;
+            color:RGB(0, 112, 74);
+            border-bottom: 3px solid RGB(0, 112, 74);
+        }

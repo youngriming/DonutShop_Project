@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+
+</head>
+<div th:fragment="header">
+    <div id="b2">
+        <header>
+            <div id="logo">
+                <h1><a href="/" style="color:RGB(0, 112, 74);">Douner Donuts</a></h1>
+            </div>
+
+            <div id="n1">
+                <ul>
+                    <li sec:authorize="isAnonymous()">
+                        <a href="/members/new"><p>회원가입</p></a>
+                    </li>
+                    <li sec:authorize="isAnonymous()">
+                        <a href="/members/login"><p>로그인</p></a>
+                    </li>
+                    <li sec:authorize="isAuthenticated()">
+                        <a href="/members/logout"><p>로그아웃</p></a>
+                    </li>
+                    <li sec:authorize="isAuthenticated()">
+                        <a href="/members/myInfo"><p>내정보조회</p></a>
+                    </li>
+                    <li sec:authorize="isAuthenticated()">
+                        <span style="font-family: 'Jua', sans-serif;" th:text="${name}"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <nav id="n2">
+                <ul>
+                    <li>
+                        <a href="/notices" >
+                            <h2>공지사항</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/boards" >
+                            <h2>게시판</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/orders" >
+                            <h2>주문내역</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/cart">
+                            <h2>장바구니</h2>
+                        </a>
+                    </li>
+                    <li sec:authorize="hasAnyAuthority('ROLE_ADMIN')">
+                        <a href="/admin/items">
+                            <h2>상품관리</h2>
+                        </a>
+                    </li>
+                    <li sec:authorize="hasAnyAuthority('ROLE_ADMIN')">
+                        <a href="/admin/item/new">
+                            <h2>상품등록</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/product">
+                            <h2>상품</h2>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+</div>
+
+</html>

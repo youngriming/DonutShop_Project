@@ -1,0 +1,180 @@
+        #list_box{
+            width: 1300px;
+            height: 1100px;
+            margin: 0 auto;
+            margin-top: 50px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        #h_2_wrap{
+            width: 100%;
+            height: 44px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #h_2{
+            width: 182px;
+            height: 44px;
+            line-height: 44px;
+            font-size: 1.5em;
+            border-bottom: 2px solid black;
+        }
+
+        #table_wrap{
+            width: 100%;
+            height: 800px;
+        }
+
+        #table1{
+            width: 100%;
+            height: 200px;
+        }
+
+        #check_wrap{
+            width: 1300px;
+            height: 50px;
+            border-bottom: 1px solid #ddd;
+            display: block;
+        }
+
+        #check_wrap td{
+            width: 432px;
+            height: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #checkall{
+            margin-right: 20px;
+        }
+
+        #cartItem_wrap{
+            width: 131px;
+            height: 100%;
+            border-bottom: 1px solid #bbb;
+        }
+
+        #cartChkBox_wrap{
+            width: 100%;
+            height: 100px;
+            border-bottom: 1px solid #ddd;
+
+        }
+
+
+        #checkbox_1, #repImgDiv, #price_box, #total_box, #center_box{
+            float: left;
+        }
+
+        #checkbox_1{
+            width: 131px;
+            margin-left: -59px;
+            margin-top: 65px;
+        }
+
+        #repImgDiv{
+            width: 290px;
+            height: 100px;
+            margin-left: 158px;
+            margin-top: 15px;
+        }
+
+        #repImgDiv span{
+            width: 200px;
+            text-align: center;
+            margin-left: -50px;
+            display: block;
+        }
+
+
+        #repImgDiv img{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ddd;
+        }
+
+        #center_box{
+            width: 290px;
+            margin-top: 55px;
+
+        }
+
+        #total_box{
+            width: 100px;
+            text-align: center;
+            margin-left: 198px;
+            margin-top: 55px;
+            font-weight: bold;
+        }
+
+        #price_box{
+            width: 100px;
+            text-align: center;
+            margin-top: 55px;
+
+        }
+
+        #price_wrap{
+            width: 200px;
+            height: 100px;
+            margin-left: -35px;
+        }
+
+        .count_box{
+            width: 164px;
+            height: 30px;
+            outline: none;
+            border: 1px solid #ddd;
+        }
+
+        #times_box{
+            width: 20px;
+            display: block;
+            background-color:  #ddd;
+            outline: none;
+            cursor: pointer;
+        }
+
+
+        #text_box_wrap{
+            width: 1300px;
+            height: 200px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #text_h2{
+            width: 260px;
+            height: 100%;
+            background-color: RGB(0, 112, 74);
+            float: right;
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        #mt-3{
+            width: 1300px;
+            height: 50px;
+            margin: 0 auto;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        #mt-3 button{
+            width: 130px;
+            height: 50px;
+            background-color: RGB(0, 112, 74);
+            color: #fff;
+            position: relative;
+            left: 50%;
+            margin-left: -65px;
+            cursor: pointer;
+            border: none;
+        }
+
+        #mt-3 button:hover{
+            background-color: #fff;
+            border: 1px solid RGB(0, 112, 74);
+            color:RGB(0, 112, 74);
+        }

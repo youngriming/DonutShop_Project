@@ -1,0 +1,46 @@
+        #footer_wrap{
+            position: relative;
+            min-height: 100%;
+            margin: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+       }
+
+        #f1{
+            width:1300px;
+            margin:0 auto;
+        }
+        footer{
+            width:100%;
+            height:154px;
+            background:black;
+            position:absolute;
+            left: 0;
+            right: 0;
+            bottom: -160px;
+
+        }
+
+         #f1 ul{
+            width:100%;
+            height:100px;
+            background:black;
+            color:white;
+            border-top:1px solid black;
+            font-size:13px;
+         }
+         #f1 ul li{
+            color:#919191;
+         }
+         .c1{
+            color:#fff;
+            font-size: 1.17em;
+            font-weight: bold;
+         }
+         #f2,#f3,#f4{
+             width:412px;
+             margin-left:20px;
+             text-align:center;
+             line-height:30px;
+             float:left;
+             margin-top:20px;
+         }

@@ -1,0 +1,85 @@
+        #b1{
+            background-color: white;
+            background: url(../img/bg_container_inner.png) repeat left top;
+            height: 800px;
+            position: relative;
+        }
+
+        #v1{
+            width: 1300px;
+            position: relative;
+            left: 50%;
+            margin-left: -650px;
+            margin-top: 10px;
+        }
+
+        .row1{
+            width: 1300px;
+            height: 550px;
+            margin: 0 auto;
+            margin-top:30px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .row1 #text-box{
+            width: 100%;
+            height: 100px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .row1 #text-box h3{
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+            font-size: 22px;
+            font-family: 'Jua', sans-serif;
+        }
+
+        .row1 #text-box #text-box_wrap{
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        .row1 #text-box #text-box_wrap p{
+            font-size: 15px;
+            font-family: 'Jua', sans-serif;
+        }
+
+        .card{
+            width: 405px;
+            height: 400px;
+            margin-left: 20px;
+            float: left;
+            margin-top: 20px;
+        }
+
+        #card-img{
+            width: 100%;
+            height:300px;
+            border: 1px solid #ddd;
+        }
+
+        .card-body{
+            width: 100%;
+            height: 100px;
+
+        }
+
+        .card-body h4{
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        .card-body p{
+            font-size: 12px;
+            line-height: 20px;
+            color: #aaa;
+            width: 400px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-body h3{
+            font-size: 14px;
+        }

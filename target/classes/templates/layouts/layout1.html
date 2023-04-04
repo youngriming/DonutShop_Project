@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<link rel="stylesheet" th:href="@{/css/header.css}">
+<link rel="stylesheet" th:href="@{/css/memberJoin.css}">
+<link rel="stylesheet" th:href="@{/css/footer.css}">
+<link rel="stylesheet" th:href="@{/css/memberForm.css}">
+<link rel="stylesheet" th:href="@{/css/memberLoginForm.css}">
+<link rel="stylesheet" th:href="@{/css/memberFindForm.css}">
+<link rel="stylesheet" th:href="@{/css/memberGetForm.css}">
+<link rel="stylesheet" th:href="@{/css/itemForm.css}">
+<!--<link rel="shortcut icon" type="image/x-icon" th:href="@{/img/douner.jpg}">-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Douner Donuts</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@300&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+
+
+    </style>
+    <th:block layout:fragment="css"></th:block>
+    <th:block layout:fragment="script"></th:block>
+</head>
+
+<body>
+<div th:replace="fragments/header::header"></div>
+
+<div layout:fragment="content">
+
+</div>
+
+<div th:replace="fragments/footer::footer"></div>
+</body>
+
+</html>

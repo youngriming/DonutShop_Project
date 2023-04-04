@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout1}">
+<head>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<div layout:fragment="content">
+    <!--비디오 나오는 부분-->
+    <div id="b1">
+        <video id="v1" autoplay muted loop>
+            <source type="video/mp4" th:src="@{/video/KakaoTalk_20230116_180542266.mp4}" />
+        </video>
+    </div>
+    <!--최근 상품 나오는 부분-->
+    <div class="row1">
+        <div id="text-box">
+            <h3>Douner Donuts <span style="color:RGB(0, 112, 74);">NEW MENU</span></h3>
+            <span id="text-box_wrap">
+                <p>
+                    Happiness, Fun, Refreshment, Energy and Break... If need be,<br>
+                    just enjoy them! In busy daily lives, Dunkin' will be a sweet friend to you.
+                </p>
+            </span>
+        </div>
+        <th:block th:each="item, status:${items.getContent()}">
+            <div class="col-md-4-margin">
+                <div class="card">
+                    <a th:href="'/item/' + ${item.id}" class="text-dark">
+                        <img th:src="${item.imgUrl}" id="card-img" th:alt="${item.itemNm}" height="300px">
+                        <div class="card-body">
+                            <h4 class="card-title">[[${item.itemNm}]]</h4>
+                            <p class="card-text">[[${item.itemDetail}]]</p>
+                            <h3 class="card-title text-danger">[[${item.price}]]원</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </th:block>
+    </div>
+</div>
+
+</html>

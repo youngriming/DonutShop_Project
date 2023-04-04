@@ -1,0 +1,142 @@
+        #h2{
+            width: 1300px;
+            height: 35px;
+            margin: 0 auto;
+
+        }
+
+        #h2 h4{
+            display: block;
+            color:#fff;
+            text-align: center;
+            line-height: 35px;
+            font-size: 12px;
+        }
+
+        #member_wrap{
+            width: 1300px;
+            height: 800px;
+            margin: 0 auto;
+            margin-top: 50px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        #member{
+            width: 180px;
+            height: 249px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        #member_box{
+            width: 100%;
+            height: 100px;
+            display: block;
+            margin-top: 20px;
+            border-top: 2px solid RGB(0, 112, 74);
+        }
+
+        #member_box ul{
+            width: 100%;
+            margin-top: 10px;
+        }
+
+
+        #member_box ul li{
+            width: 180px;
+            height: 32px;
+            line-height: 32px;
+        }
+
+        #member_box ul li a{
+            width: 100%;
+            height: 32px;
+            display: block;
+        }
+
+        .member_first{
+            width: 100%;
+            background-color: #00704a;
+        }
+
+        #member, #member2{
+            float: left;
+        }
+
+        #member2{
+            width: 1080px;
+            height: 100%;
+            margin: 0 auto;
+            margin-left: 40px;
+
+        }
+
+        #m_img{
+            width: 986px;
+            height: 128px;
+            background-size: cover;
+            background: url("../img/bg_visual_member.png");
+            margin: 0 auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #m_box{
+           line-height: 25px;
+        }
+
+        #form_wrap{
+            width: 986px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        #check1,#check2{
+            float: left;
+        }
+
+
+        #check2{
+            margin-left: 10px;
+        }
+
+        .form-group label{
+            width: 150px;
+            height: 50px;
+            background-color: #00704a;
+            display: block;
+            margin-top: 20px;
+            line-height: 50px;
+            text-align: center;
+            float: left;
+            color: #fff;
+        }
+
+        .form-control{
+            width: 810px;
+            height: 46px;
+            margin-top: 20px;
+        }
+        .fieldError{
+            width: 390px;
+            color: red;
+        }
+
+        #btn{
+            margin-top: 50px;
+        }
+
+        #btn button{
+            width: 986px;
+            height: 50px;
+            text-align: center;
+            background-color: #00704a;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        #btn button:hover{
+            background-color: #fff;
+            border: 1px solid #00704a;
+            color: black;
+        }

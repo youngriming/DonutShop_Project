@@ -1,0 +1,253 @@
+        #top_text{
+            width: 986px;
+            height: 44px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #wrap{
+            width: 986px;
+            min-height: 550px;
+            margin: 0 auto;
+            margin-top:100px;
+        }
+        #top_text h2{
+            width: 182px;
+            height: 44px;
+            border-bottom: 2px solid black;
+        }
+
+        #d_wrap{
+            width: 986px;
+            min-height: 550px;
+            background-color:#fff;
+            border-bottom:1px solid #ddd;
+            margin-bottom:20px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        #img1{
+            width: 470px;
+            height: 473px;
+            margin-top: 20px;
+            border:1px solid #ddd;
+            float: left;
+        }
+
+        #img1 img{
+            width:100%;
+            height:100%;
+        }
+
+        #wd1{
+            width: 473px;
+            height: 70px;
+            float: left;
+            margin-top: 20px;
+            margin-left: 40px;
+            border-bottom: 3px solid black;
+        }
+
+        #h1{
+            width: 378px;
+            height: 70px;
+            font-size: 1.7em;
+            font-weight: bold;
+            line-height: 70px;
+            float: left;
+            margin-left: 10px;
+            font-family: 'Jua', sans-serif;
+            color:RGB(0, 112, 74);
+        }
+
+        .sell1{
+            width: 60px;
+            height: 70px;
+            display: block;
+            text-align: center;
+            line-height: 70px;
+            float: left;
+            font-weight: bold;
+        }
+
+        #wd2{
+            width: 473px;
+            height: 70px;
+            margin-left: 40px;
+            border-bottom: 1px solid #ddd;
+            float: left;
+        }
+
+        #wd2_1{
+            width: 100%;
+            height: 100%;
+        }
+
+        #price1{
+            width: 200px;
+            height: 70px;
+            margin-left: 10px;
+            line-height: 70px;
+            font-weight: bold;
+        }
+
+        #price2{
+            width: 40px;
+            height: 70px;
+            text-align: center;
+            line-height: 70px;
+            margin-right: 5px;
+            display: block;
+
+        }
+
+        #price1, #price2{
+            float: left;
+        }
+
+        #price3{
+            line-height: 70px;
+        }
+
+        #wd3{
+            width: 473px;
+            height: 70px;
+            margin-left: 40px;
+            border-bottom: 1px solid #ddd;
+            float: left;
+        }
+
+        #wd3_1{
+            width: 100%;
+            height: 100%;
+        }
+
+        #quantity1{
+            width: 200px;
+            height: 70px;
+            margin-left: 10px;
+            line-height: 70px;
+            font-weight: bold;
+            display: block;
+            float: left;
+        }
+
+        .quantity2{
+            width: 200px;
+            height: 30px;
+            margin-top: 20px;
+            outline: none;
+        }
+
+        #totalPrice1{
+            width: 200px;
+            height: 70px;
+            margin-left: 10px;
+            line-height: 70px;
+            font-weight: bold;
+        }
+
+        #totalPrice1, .totalPrice2{
+            float: left;
+        }
+
+        .totalPrice2{
+            line-height: 70px;
+        }
+
+        #wd4{
+            width: 473px;
+            height: 70px;
+            margin-left: 40px;
+            border-bottom: 1px solid black;
+            float: left;
+        }
+
+        #wd5{
+            width: 473px;
+            height: 70px;
+            margin-left: 40px;
+            float: left;
+        }
+
+        #wd5_1{
+            width: 100%;
+            height: 100%;
+        }
+
+        .btn1{
+            width: 150px;
+            height: 50px;
+            margin-top: 20px;
+            margin-left: 60px;
+            background-color: RGB(0, 112, 74);
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .btn1:hover{
+            background-color: #fff;
+            color: RGB(0, 112, 74);
+            border: 1px solid RGB(0, 112, 74);
+        }
+
+        #wd6{
+            width: 473px;
+            height: 70px;
+            margin-left: 40px;
+            float: left;
+        }
+
+        #btn2{
+            width: 150px;
+            height: 50px;
+            margin-top: 20px;
+            background-color: red;
+            border: none;
+            color: #fff;
+        }
+
+        #container{
+            width: 986px;
+            height: 290px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #container1{
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #container_box{
+            width: 266px;
+            height: 49px;
+            line-height: 49px;
+            border-top: 2px solid black;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            font-size: 1.1em;
+            text-align: center;
+
+        }
+
+        #lead_box{
+            width: 950px;
+            height: 800px;
+            margin-top: 20px;
+            line-height: 22px;
+            margin-left: 20px;
+            white-space: pre;
+        }
+
+        #container2{
+            position: relative;
+            margin-top:20px;
+        }
+
+        #container2 img{
+            position: relative;
+            width: 60%;
+            left:50%;
+            margin-left:-25%;
+        }

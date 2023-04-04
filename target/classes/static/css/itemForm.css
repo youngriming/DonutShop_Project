@@ -1,0 +1,201 @@
+
+        .custom-select{
+            width:994px;
+            outline:none;
+            height: 50px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-size: 15px;
+            border: 1px solid #00704a;
+        }
+
+        #member_wrap{
+            width: 1300px;
+            height: 1500px;
+            margin: 0 auto;
+            margin-top: 50px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        #member{
+            width: 180px;
+            height: 249px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        #member_box{
+            width: 100%;
+            height: 100px;
+            display: block;
+            margin-top: 20px;
+            border-top: 2px solid RGB(0, 112, 74);
+        }
+
+        #member_box ul{
+            width: 100%;
+            margin-top: 10px;
+        }
+
+
+        #member_box ul li{
+            width: 180px;
+            height: 32px;
+            line-height: 32px;
+        }
+
+        #member_box ul li a{
+            width: 100%;
+            height: 32px;
+            display: block;
+        }
+
+        .member_first{
+            width: 100%;
+            background-color: #00704a;
+        }
+
+        #member, #member2{
+            float: left;
+        }
+
+        #member2{
+            width: 1080px;
+            height: 100%;
+            margin: 0 auto;
+            margin-left: 40px;
+
+        }
+
+        #m_img{
+            width: 986px;
+            height: 128px;
+            background-size: cover;
+            background: url("../img/bg_visual_member.png");
+            margin: 0 auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #m_box{
+           line-height: 25px;
+        }
+
+        #form_wrap{
+            width: 986px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        #check1,#check2{
+            float: left;
+        }
+
+
+        #check2{
+            margin-left: 10px;
+        }
+
+        .form-group label{
+            width: 150px;
+            height: 50px;
+            background-color: #00704a;
+            display: block;
+            margin-top: 20px;
+            line-height: 50px;
+            text-align: center;
+            float: left;
+            color: #fff;
+        }
+
+        .form-control{
+            width:840px;
+            height: 46px;
+            outline:none;
+            margin-top: 20px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .fieldError{
+            width: 390px;
+            color: red;
+        }
+
+        .input-group-text{
+            width: 150px;
+            height: 50px;
+            background-color: #00704a;
+            color: #fff;
+            display: block;
+            text-align: center;
+            line-height: 50px;
+            float: left;
+            margin-top: 20px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        #input-group-text1{
+            height: 200px;
+            line-height: 200px;
+        }
+
+        #form_wrap{
+            width: 1080px;
+            margin: 0 auto;
+            height: 200px;
+            margin-top: 50px;
+        }
+
+
+        .file-input{
+            width: 493px;
+            height: 48px;
+            margin-bottom: 10px;
+            font-size:18px;
+            border: 1px solid #00704a;
+        }
+
+        input[type=file]::file-selector-button {
+            width: 150px;
+            height: 40px;
+            background: #fff;
+            border: 1px solid #00704a;
+            cursor: pointer;
+            position: relative;
+            margin-top: 4px;
+            margin-left: 10px;
+            font-size:16px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        input[type=file]::file-selector-button:hover{
+            background-color: #00704a;
+            color: #fff;
+        }
+
+        .form-group1 label{
+            width: 493px;
+            height: 50px;
+            background-color: #00704a;
+            display: block;
+            margin-bottom: 0px;
+            float: left;
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+        }
+
+
+        .btn{
+            width: 130px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border: 1px solid #00704a;
+            background-color: #fff;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn:hover{
+            background-color: #00704a;
+            color: #fff;
+        }

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      layout:decorate="~{layouts/layout1}">
+
+<th:block layout:fragment="script">
+  <script th:inline="javascript">
+    $(document).ready(function(){
+        var errorMessage = [[${errorMessage}]];
+        if(errorMessage != null){
+          alert(errorMessage); // "첫번째 상품 이미지는 필수 입력 값입니다." 이런 에러메세지 경고창으로 나옴.
+    }
+    });
+    </script>
+</th:block>
+<!--사용자 CSS 추가-->
+<th:block layout:fragment="css">
+  <style>
+    #member_wrap {
+        height: 1000px;
+    }
+    .input-group{
+        margin-bottom : 10px
+    }
+    .img-div{
+        margin-bottom : 10px
+    }
+    .fieldError{
+        color : #bd2130;
+    }
+    .form-control{
+        width:840px;
+        outline:none;
+    }
+    .btn{
+        position:relative;
+        left:50%;
+        margin-top:50px;
+        float:left;
+        margin-left:-13%;
+    }
+    </style>
+</th:block>
+
+<div layout:fragment="content">
+
+  <div id="member_wrap">
+
+    <div id="member">
+      <h1 style="color: #00704a;">Notice</h1>
+      <span id="member_box">
+         <ul>
+           <li class="member_first2"><a href="/boards"><p>게시판</p></a></li>
+           <li class="member_first"><a href="/board/new" class="a" sec:authorize="isAuthenticated()"><p style="color: #fff;">게시글 작성</p></a></li>
+         </ul>
+      </span>
+    </div>
+
+    <div id="member2">
+      <div id="m_img">
+        <div id="m_box">
+          <h1>게시판</h1><br>
+          <p>아래 양식에 맞추어<br>게시글을 등록해주세요.</p>
+        </div>
+      </div>
+
+      <form role="form" method="post" th:object="${boardFormDto}" style="margin-left:40px;">
+        <input type="hidden" th:field="*{id}">
+
+        <div class="form-group">
+          <select th:field="*{qnaStatus}" class="custom-select">
+            <option value="DELIVERY">배송</option>
+            <option value="PRODUCT">상품</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">제목</span>
+          </div>
+          <input type="text" th:field="*{title}" class="form-control" placeholder="제목을 입력해주세요.">
+        </div>
+        <p th:if="${#fields.hasErrors('title')}" th:errors="*{title}" class="fieldError">Incorrect data</p>
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">작성자</span>
+          </div>
+          <input type="text" th:field="*{author}" class="form-control" placeholder="작성자를 입력해주세요.">
+        </div>
+        <p th:if="${#fields.hasErrors('author')}" th:errors="*{author}" class="fieldError">Incorrect data</p>
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="input-group-text1">상세 내용</span>
+          </div>
+          <textarea class="form-control" aria-label="With textarea" th:field="*{boardDetail}"
+                    style="height: 198px; resize:none;" placeholder="내용을 입력하세요."></textarea>
+        </div>
+        <p th:if="${#fields.hasErrors('boardDetail')}" th:errors="*{boardDetail}" class="fieldError">Incorrect data</p>
+
+
+        <div th:if="${#strings.isEmpty(boardFormDto.id)}" style="text-align : center; margin-top:20px; margin-left:-40px;">
+          <button th:formaction="@{/board/new}" type="submit" class="btn">저장</button>
+        </div>
+        <div th:unless="${#strings.isEmpty(boardFormDto.id)}" style="text-align : center; margin-top:150px; margin-left:-40px;">
+          <button th:formaction="@{'/board/update/'+${boardFormDto.id}}" type="submit" class="btn">수정</button>
+        </div>
+        <div th:unless="${#strings.isEmpty(boardFormDto.id)}" style="text-align : center; margin-left: 230px;">
+          <button th:formaction="@{'/board/delete/'+${boardFormDto.id}}" type="submit" class="btn">삭제</button>
+        </div>
+
+
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+      </form>
+    </div>
+  </div>
+</div>
+</html>
